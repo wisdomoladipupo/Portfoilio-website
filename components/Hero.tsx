@@ -5,7 +5,7 @@ import ImageWithErrorFallback from './ImageWithErrorFallback'
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div 
@@ -14,7 +14,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="w-64 h-64 rounded-full overflow-hidden bg-gray-200 border-4 border-white shadow-xl">
+            <div className="w-64 h-64 rounded-full overflow-hidden bg-gray-700 border-4 border-gray-600 shadow-xl">
               <ImageWithErrorFallback 
                 src="/images/my passport.jpg" 
                 alt="Oladipupo Wisdom" 
@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <motion.h1 
-              className="text-4xl md:text-6xl font-bold text-gray-900 mb-4"
+              className="text-4xl md:text-6xl font-bold text-white mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -38,7 +38,7 @@ export default function Hero() {
               Oladipupo Wisdom
             </motion.h1>
             <motion.h2 
-              className="text-2xl md:text-3xl text-blue-600 mb-6"
+              className="text-2xl md:text-3xl text-blue-400 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -46,7 +46,7 @@ export default function Hero() {
               Frontend Developer
             </motion.h2>
             <motion.p 
-              className="text-lg md:text-xl text-gray-600 max-w-3xl mb-8"
+              className="text-lg md:text-xl text-gray-300 max-w-3xl mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}

@@ -98,13 +98,13 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             A selection of my recent work and personal projects
           </p>
         </div>
@@ -116,10 +116,10 @@ export default function Projects() {
           animate="visible"
         >
           {projects.map((project, index) => (
-            <motion.div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-lg" variants={itemVariants}>
+            <motion.div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg" variants={itemVariants}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 {project.images.map((image, imgIndex) => (
-                  <div key={imgIndex} className="relative h-64 lg:h-80 bg-gray-200 overflow-hidden group">
+                  <div key={imgIndex} className="relative h-64 lg:h-80 bg-gray-700 overflow-hidden group">
                     <div className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
                          style={{ transform: `translateX(-${currentImageIndex[index] * 100}%)` }}>
                       {project.images.map((img, idx) => (
@@ -177,12 +177,12 @@ export default function Projects() {
                 ))}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
                 
                 <div className="mb-4">
-                  <h4 className="font-medium text-gray-900 mb-2">Key Features:</h4>
-                  <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  <h4 className="font-medium text-white mb-2">Key Features:</h4>
+                  <ul className="list-disc list-inside text-gray-300 space-y-1">
                     {project.features.map((feature, idx) => (
                       <li key={idx}>{feature}</li>
                     ))}
@@ -190,12 +190,12 @@ export default function Projects() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="font-medium text-gray-900 mb-2">Technologies:</h4>
+                  <h4 className="font-medium text-white mb-2">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm font-medium"
+                        className="px-2 py-1 bg-blue-900 text-blue-200 rounded text-sm font-medium"
                       >
                         {tech}
                       </span>
